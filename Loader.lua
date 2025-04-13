@@ -2,15 +2,7 @@ repeat task.wait() until game:IsLoaded()
 
 local UI = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local pastebinUrl = "https://pastebin.com/raw/DkyEE1m7"
-local pastebinUrl = "https://pastebin.com/raw/9LL3vw1f"
 local staticKey = game:HttpGet(pastebinUrl)
-if game.placeId == 72368345999613 then
-
-elseif game.placeId == 4483381587 then
-else
-    game.Players.LocalPlayer:Kick("Worm doesn't support this game | Join our discord for more information")
-end
-
 
 local function notify(title, content, duration)
     UI:Notify({
@@ -50,16 +42,6 @@ Tabs.Main:AddButton({
             notify("Key Valid", "Your key is valid! Loading script...", 5)
             Window:Destroy()
             task.wait(1)
-
-})
-
-Tabs.Main:AddButton({
-	Title = "Get Key (Workink)",
-	Callback = function()
-		setclipboard("https://ads.luarmor.net/get_key?for=Scylla_Scripthub_Workink-qsCyYutvqNcX")
-		notify("Copied To Clipboard", "Ad Reward Link has been copied to your clipboard", 16)
-	end,
-})
 
             loadstring(game:HttpGet("https://raw.githubusercontent.com/TheGreatOath/Worm/refs/heads/main/MainScript.lua"))()
 

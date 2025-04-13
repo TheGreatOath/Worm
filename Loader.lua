@@ -2,6 +2,7 @@ repeat task.wait() until game:IsLoaded()
 
 local UI = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local pastebinUrl = "https://pastebin.com/raw/DkyEE1m7"
+local pastebinUrl = "https://pastebin.com/raw/9LL3vw1f"
 local staticKey = game:HttpGet(pastebinUrl)
 if game.placeId == 72368345999613 then
 

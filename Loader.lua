@@ -2,9 +2,8 @@ repeat task.wait() until game:IsLoaded()
 
 local UI = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local keyUrl1 = "https://pastebin.com/raw/DkyEE1m7"
-local keyUrl2 = "https://pastebin.com/raw/9LL3vw1f"
-
 local staticKey1 = game:HttpGet(keyUrl1)
+local keyUrl2 = "https://pastebin.com/raw/9LL3vw1f"
 local staticKey2 = game:HttpGet(keyUrl2)
 
 local function notify(title, content, duration)

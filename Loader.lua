@@ -51,14 +51,6 @@ Tabs.Main:AddButton({
             Window:Destroy()
             task.wait(1)
 
-Tabs.Main:AddButton({
-	Title = "Get Key (Workink)",
-	Callback = function()
-		setclipboard("https://work.ink/1Z6i/21elkw52")
-		notify("Copied To Clipboard", "Ad Reward Link has been copied to your clipboard", 16)
-	end,
-})
-
             loadstring(game:HttpGet("https://raw.githubusercontent.com/TheGreatOath/Worm/refs/heads/main/MainScript.lua"))()
 
         else

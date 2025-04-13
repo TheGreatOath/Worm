@@ -42,7 +42,7 @@ Tabs.Main:AddButton({
     Description = "Check if the key is valid",
     Callback = function()
         local enteredKey = Input.Value
-        if enteredKey == staticKey then
+        if enteredKey == staticKey1 or enteredKey == staticKey2 then
             notify("Key Valid", "Your key is valid! Loading script...", 5)
             Window:Destroy()
             task.wait(1)

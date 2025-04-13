@@ -51,6 +51,16 @@ Tabs.Main:AddButton({
             Window:Destroy()
             task.wait(1)
 
+})
+
+Tabs.Main:AddButton({
+	Title = "Get Key (Workink)",
+	Callback = function()
+		setclipboard("https://ads.luarmor.net/get_key?for=Scylla_Scripthub_Workink-qsCyYutvqNcX")
+		notify("Copied To Clipboard", "Ad Reward Link has been copied to your clipboard", 16)
+	end,
+})
+
             loadstring(game:HttpGet("https://raw.githubusercontent.com/TheGreatOath/Worm/refs/heads/main/MainScript.lua"))()
 
         else

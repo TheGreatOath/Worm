@@ -44,10 +44,17 @@ Tabs.Main:AddButton({
             task.wait(1)
 
             loadstring(game:HttpGet("https://raw.githubusercontent.com/TheGreatOath/Worm/refs/heads/main/MainScript.lua"))()
-
         else
             notify("Invalid Key", "The entered key is invalid.", 3)
         end
+    end,
+})
+
+Tabs.Main:AddButton({
+    Title = "Copy Key Link",
+    Callback = function()
+        setclipboard("https://work.ink/1Z6i/21elkw52")
+        notify("Copied", "Link copied to clipboard!", 3)
     end,
 })
 

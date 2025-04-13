@@ -36,13 +36,13 @@ local Input = Tabs.Main:AddInput("Key", {
 
 Tabs.Main:AddButton({
     Title = "Check Key",
+    Description = "Check if the key is valid",
     Callback = function()
         local enteredKey = Input.Value
         if enteredKey == staticKey then
             notify("Key Valid", "Your key is valid! Loading script...", 5)
             Window:Destroy()
             task.wait(1)
-
             loadstring(game:HttpGet("https://raw.githubusercontent.com/TheGreatOath/Worm/refs/heads/main/MainScript.lua"))()
         else
             notify("Invalid Key", "The entered key is invalid.", 3)
@@ -51,10 +51,28 @@ Tabs.Main:AddButton({
 })
 
 Tabs.Main:AddButton({
-    Title = "Copy Key Link",
+    Title = "Copy Key Link 1",
+    Description = "Copy the first key link",
     Callback = function()
-        setclipboard("https://work.ink/1Z6i/21elkw52")
-        notify("Copied", "Link copied to clipboard!", 3)
+        if setclipboard then
+            setclipboard("https://work.ink/1Z6i/21elkw52")
+            notify("Copied", "Link 1 copied to clipboard!", 3)
+        else
+            notify("Error", "Clipboard function not supported.", 3)
+        end
+    end,
+})
+
+Tabs.Main:AddButton({
+    Title = "Copy Key Link 2",
+    Description = "Copy the second key link",
+    Callback = function()
+        if setclipboard then
+            setclipboard("https://link-center.net/1338161/worm-key")
+            notify("Copied", "Link 2 copied to clipboard!", 3)
+        else
+            notify("Error", "Clipboard function not supported.", 3)
+        end
     end,
 })
 

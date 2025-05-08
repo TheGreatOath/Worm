@@ -35,7 +35,7 @@ if typeof(copyfunction) == "function" then
 end
 
 local ThemeManager = {} do
-	ThemeManager.Folder = 'LinoriaLibSettings'
+	--ThemeManager.Folder = 'LinoriaLibSettings'
 	-- if not isfolder(ThemeManager.Folder) then makefolder(ThemeManager.Folder) end
 
 	ThemeManager.Library = nil

@@ -1,7 +1,7 @@
 local httpService = game:GetService("HttpService")
 
 local InterfaceManager = {} do
-	InterfaceManager.Folder = "WormSettings"
+	InterfaceManager.Folder = "Oath"
 
     InterfaceManager.Settings = {
         Theme = "Dark",

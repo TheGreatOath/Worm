@@ -441,7 +441,7 @@ SaveManager:SetIgnoreIndexes({ 'MenuKeybind' })
 -- use case for doing it this way:
 -- a script hub could have themes in a global folder
 -- and game configs in a separate folder per game
-ThemeManager:SetFolder('Worm')
+ThemeManager:SetFolder('WormHub')
 SaveManager:SetFolder('Worm/specific-game')
 
 -- Builds our config menu on the right side of our tab

@@ -1,7 +1,7 @@
 local httpService = game:GetService('HttpService')
 
 local SaveManager = {} do
-	SaveManager.Folder = 'WormSettings'
+	SaveManager.Folder = 'Settings'
 	SaveManager.Ignore = {}
 	SaveManager.Parser = {
 		Toggle = {

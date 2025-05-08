@@ -167,7 +167,7 @@ local ThemeManager = {} do
 			theme[field] = Options[field].Value:ToHex()
 		end
 
-		writefile(self.Folder .. '/themes/' .. file .. '.scylla', httpService:JSONEncode(theme))
+		writefile(self.Folder .. '/themes/' .. file .. '.worm', httpService:JSONEncode(theme))
 	end
 
 	function ThemeManager:ReloadCustomThemes()
@@ -176,10 +176,10 @@ local ThemeManager = {} do
 		local out = {}
 		for i = 1, #list do
 			local file = list[i]
-			if file:sub(-7) == '.scylla' then
+			if file:sub(-7) == '.worm' then
 				-- i hate this but it has to be done ...
 
-				local pos = file:find('.scylla', 1, true)
+				local pos = file:find('.worm', 1, true)
 				local char = file:sub(pos, pos)
 
 				while char ~= '/' and char ~= '\\' and char ~= '' do

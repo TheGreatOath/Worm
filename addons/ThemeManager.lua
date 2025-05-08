@@ -1,6 +1,6 @@
 local httpService = game:GetService('HttpService')
 local ThemeManager = {} do
-	ThemeManager.Folder = 'ThemeSettings'
+	ThemeManager.Folder = 'Theme'
 
 	ThemeManager.Library = nil
 	ThemeManager.BuiltInThemes = {

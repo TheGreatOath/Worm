@@ -3,9 +3,9 @@
 
 local worm = 'https://github.com/TheGreatOath/Worm/main/'
 
-local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
-local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))()
-local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
+local Library = loadstring(game:HttpGet(worm .. 'Library.lua'))()
+local ThemeManager = loadstring(game:HttpGet(worm .. 'addons/ThemeManager.lua'))()
+local SaveManager = loadstring(game:HttpGet(worm .. 'addons/SaveManager.lua'))()
 
 local Window = Library:CreateWindow({
     -- Set Center to true if you want the menu to appear in the center

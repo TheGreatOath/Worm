@@ -442,7 +442,7 @@ SaveManager:SetIgnoreIndexes({ 'MenuKeybind' })
 -- a script hub could have themes in a global folder
 -- and game configs in a separate folder per game
 ThemeManager:SetFolder('Worm')
-SaveManager:SetFolder('Worm/game')
+SaveManager:SetFolder('Worm/specific-game')
 
 -- Builds our config menu on the right side of our tab
 SaveManager:BuildConfigSection(Tabs['UI Settings'])

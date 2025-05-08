@@ -1,11 +1,11 @@
 -- New example script written by wally
 -- You can suggest changes with a pull request or something
 
-local Worm = 'https://github.com/TheGreatOath/Worm/main/'
+local worm = 'https://github.com/TheGreatOath/Worm/main/'
 
-local Library = loadstring(game:HttpGet(Worm .. 'Library.lua'))()
-local ThemeManager = loadstring(game:HttpGet(Worm .. 'addons/ThemeManager.lua'))()
-local SaveManager = loadstring(game:HttpGet(Worm .. 'addons/SaveManager.lua'))()
+local Library = loadstring(game:HttpGet(worm .. 'Library.lua'))()
+local ThemeManager = loadstring(game:HttpGet(worm .. 'addons/ThemeManager.lua'))()
+local SaveManager = loadstring(game:HttpGet(worm .. 'addons/SaveManager.lua'))()
 
 local Window = Library:CreateWindow({
     -- Set Center to true if you want the menu to appear in the center
